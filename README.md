@@ -195,11 +195,11 @@ See .data/deployerTL-db.csv file for getting TechLab's (20250426-dletizia-BASE-2
 
 | techlab_id | member_id | pci_project_id | pci_order_id | pci_order_url | is_order_paid | vrack_id | tl_created_at | tl_terminated_at | pci_member_username | pci_member_password |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| 20250425-dletizia-BASE-1 | member_1 | a29f5c9d4b914cda9a74b03e9094f208 | 226917728 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226917728&orderPassword=4sRmcA8Rao | true | pn-1228051 | Fri Apr 25 04:53:00 UTC 2025 | null | null | null |
-| 20250425-dletizia-BASE-2 | member_1 | pci-*001 | 226926618 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226926618&orderPassword=jDmj7bStPm | false | pn-*001 | Fri Apr 25 14:48:05 UTC 2025 | null | null | null |
-| 20250425-dletizia-BASE-2 | member_2 | pci-*002 | 226926717 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226926717&orderPassword=CH4PaqCsUc | false | pn-*002 | Fri Apr 25 14:52:17 UTC 2025 | null | null | null |
-| 20250426-dletizia-BASE-2 | member_1 | f62fd318294d4ea4a07059b7cdca30eb | 226944154 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226944154&orderPassword=hcsTYDDUtL | true | pn-1228351 | Sat Apr 26 22:05:28 UTC 2025 | Sun Apr 27 00:41:04 UTC 2025 | null | null |
-| 20250426-dletizia-BASE-2 | member_2 | 8e7a4319ef424c5386b3ef7b4dee7671 | 226944184 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226944184&orderPassword=CwZ1RdPJin | true | pn-1228353 | Sat Apr 26 22:09:18 UTC 2025| Sun Apr 27 00:42:12 UTC 2025 | null | null |
+| 20250425-dletizia-BASE-1 | member_1 | *** | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | true | *** | Fri Apr 25 04:53:00 UTC 2025 | null | *** | *** |
+| 20250425-dletizia-BASE-2 | member_1 | pci-*001 | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | false | pn-*001 | Fri Apr 25 14:48:05 UTC 2025 | null | null | null |
+| 20250425-dletizia-BASE-2 | member_2 | pci-*002 | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | false | pn-*002 | Fri Apr 25 14:52:17 UTC 2025 | null | null | null |
+| 20250426-dletizia-BASE-2 | member_1 | *** | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | true | *** | Sat Apr 26 22:05:28 UTC 2025 | Sun Apr 27 00:41:04 UTC 2025 | *** | *** |
+| 20250426-dletizia-BASE-2 | member_2 | *** | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | true | *** | Sat Apr 26 22:09:18 UTC 2025| Sun Apr 27 00:42:12 UTC 2025 | *** | *** |
 
 # DESTROY TL env
 
@@ -245,16 +245,16 @@ export CONFIRM_TERMINATION_BOOL=true
 ```bash
 (techlab) dletizia@ovh techlabDeployer-PoC % scripts/ovhDeployerTL.sh destroy 20250425-dletizia-BASE-1 true
 BASE Service terminating for TL_ID: 20250425-dletizia-BASE-1 ...
-PCI_PROJECT_ID=a29f5c9d4b914cda9a74b03e9094f208
-VRACK_ID=pn-1228051
+PCI_PROJECT_ID=***
+VRACK_ID=***
 REMOVE_PCI_FROM_VRACK_RESPONSE: {
   "lastUpdate": "2025-04-26T23:11:29+02:00",
   "todoDate": "2025-04-26T23:11:29+02:00",
-  "id": 5955813,
+  "id": ***,
   "status": "init",
-  "serviceName": "pn-1228051",
+  "serviceName": "***",
   "orderId": null,
-  "targetDomain": "a29f5c9d4b914cda9a74b03e9094f208",
+  "targetDomain": "***",
   "function": "removeCloudTenantLink"
 }
 TERMINATE_VRACK_RESPONSE: An email was sent in order to acknowledge your request.
@@ -270,31 +270,31 @@ TERMINATE_PCI_RESPONSE: An email was sent in order to acknowledge your request.
 ```bash
 (techlab) dletizia@ovh techlabDeployer-PoC % scripts/ovhDeployerTL.sh destroy 20250426-dletizia-BASE-2 true
 BASE Service terminating for TL_ID: 20250426-dletizia-BASE-2 ...
-PCI_PROJECT_ID=f62fd318294d4ea4a07059b7cdca30eb
-VRACK_ID=pn-1228351
+PCI_PROJECT_ID=***
+VRACK_ID=***
 REMOVE_PCI_FROM_VRACK_RESPONSE: {
-  "targetDomain": "f62fd318294d4ea4a07059b7cdca30eb",
+  "targetDomain": "***",
   "function": "removeCloudTenantLink",
   "todoDate": "2025-04-27T02:40:19+02:00",
-  "serviceName": "pn-1228351",
+  "serviceName": "***",
   "orderId": null,
   "status": "init",
-  "id": 5956151,
+  "id": ***,
   "lastUpdate": "2025-04-27T02:40:19+02:00"
 }
 TERMINATE_VRACK_RESPONSE: An email was sent in order to acknowledge your request.
 TERMINATE_PCI_RESPONSE: An email was sent in order to acknowledge your request.
 >> TERMINATED -cloud,-vrack for member 1
-PCI_PROJECT_ID=8e7a4319ef424c5386b3ef7b4dee7671
-VRACK_ID=pn-1228353
+PCI_PROJECT_ID=***
+VRACK_ID=***
 REMOVE_PCI_FROM_VRACK_RESPONSE: {
   "status": "init",
-  "id": 5956152,
-  "serviceName": "pn-1228353",
+  "id": ***,
+  "serviceName": "***",
   "lastUpdate": "2025-04-27T02:41:44+02:00",
   "orderId": null,
   "function": "removeCloudTenantLink",
-  "targetDomain": "8e7a4319ef424c5386b3ef7b4dee7671",
+  "targetDomain": "***",
   "todoDate": "2025-04-27T02:41:44+02:00"
 }
 TERMINATE_VRACK_RESPONSE: An email was sent in order to acknowledge your request.
@@ -311,19 +311,12 @@ TERMINATE_PCI_RESPONSE: An email was sent in order to acknowledge your request.
 
 | techlab_id | member_id | pci_project_id | pci_order_id | pci_order_url | is_order_paid | vrack_id | tl_created_at | tl_terminated_at | pci_member_username | pci_member_password |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| 20250425-dletizia-BASE-1 | member_1 | a29f5c9d4b914cda9a74b03e9094f208 | 226917728 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226917728&orderPassword=4sRmcA8Rao | true | pn-1228051 | Fri Apr 25 04:53:00 UTC 2025 | Sat Apr 26 21:12:02 UTC 2025 | null | null |
-| 20250425-dletizia-BASE-2 | member_1 | pci-*001 | 226926618 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226926618&orderPassword=jDmj7bStPm | false | pn-*001 | Fri Apr 25 14:48:05 UTC 2025 | null | null | null |
-| 20250425-dletizia-BASE-2 | member_2 | pci-*002 | 226926717 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226926717&orderPassword=CH4PaqCsUc | false | pn-*002 | Fri Apr 25 14:52:17 UTC 2025 | null | null | null |
-| 20250426-dletizia-BASE-2 | member_1 | f62fd318294d4ea4a07059b7cdca30eb | 226944154 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226944154&orderPassword=hcsTYDDUtL | true | pn-1228351 | Sat Apr 26 22:05:28 UTC 2025 | Sun Apr 27 00:41:04 UTC 2025 | null | null |
-| 20250426-dletizia-BASE-2 | member_2 | 8e7a4319ef424c5386b3ef7b4dee7671 | 226944184 | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=226944184&orderPassword=CwZ1RdPJin | true | pn-1228353 | Sat Apr 26 22:09:18 UTC 2025| Sun Apr 27 00:42:12 UTC 2025 | null | null |
+| 20250425-dletizia-BASE-1 | member_1 | *** | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | true | *** | Fri Apr 25 04:53:00 UTC 2025 | Sat Apr 26 21:12:02 UTC 2025 | *** | *** |
+| 20250425-dletizia-BASE-2 | member_1 | pci-*001 | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | false | pn-*001 | Fri Apr 25 14:48:05 UTC 2025 | null | null | null |
+| 20250425-dletizia-BASE-2 | member_2 | pci-*002 | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | false | pn-*002 | Fri Apr 25 14:52:17 UTC 2025 | null | null | null |
+| 20250426-dletizia-BASE-2 | member_1 | *** | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | true | *** | Sat Apr 26 22:05:28 UTC 2025 | Sun Apr 27 00:41:04 UTC 2025 | *** | *** |
+| 20250426-dletizia-BASE-2 | member_2 | *** | *** | https://www.ovh.com/cgi-bin/order/display-order.cgi?orderId=***&orderPassword=*** | true | *** | Sat Apr 26 22:09:18 UTC 2025| Sun Apr 27 00:42:12 UTC 2025 | *** | *** |
 
-# Q&A
+# Next Steps
 
-- Feedback
-- Next Steps
-
-# Thank you!
-
-Grazie
-
-d
+What is our `feedback` about it?
