@@ -5,7 +5,7 @@ A personal proof of concept _(PoC)_ as **BASH Shell** `scripts`.
 
 # User case
 
-As Tech Lab owner, _TL_OWNER_, is **A MUST TO HAVE** to `create` and `destroy` Tech Lab environments, _TL_ENVIRONMENT_, inside the current and active team's AccountID (nic-handle) instead of asking for generating commercial voucher about Public Cloud for Tech Lab members, _TL_MEMBERS_, and then be consumed by them.
+As Tech Lab owner, _TL_OWNER_, is **A MUST TO HAVE** to `create` and `destroy` Tech Lab environments, _TL_ENVIRONMENT_, inside the current and active team's AccountID (nic-handle) instead of asking for generating commercial voucher about Public Cloud for Tech Lab members, _TL_MEMBERS_, and then be consumed by them. Additionally, it will avoid any quota limits for free!
 
 ## What a TL_ENVIRONMENT means?
 
